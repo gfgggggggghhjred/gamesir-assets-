@@ -1,0 +1,32 @@
+{
+  "archive": "device-assets.zip",
+  "sha256": "52bf04193f9bb347940807c8e3dbb4e012c07a930102805bd6bd4be18409083f",
+  "archiveBytes": 1347,
+  "classification": "Saved application settings; no overlay artwork included",
+  "assetLookup": {
+    "G7ProCE:0x1032": "G7ProCE/Crown"
+  },
+  "files": [
+    {
+      "path": "device-assets.json",
+      "size": 41
+    },
+    {
+      "path": "main-window.json",
+      "size": 95
+    },
+    {
+      "path": "overlay-options.json",
+      "size": 211
+    },
+    {
+      "path": "overlay-window.json",
+      "size": 96
+    },
+    {
+      "path": "web-source-options.json",
+      "size": 93
+    }
+  ],
+  "webSource": "http://127.0.0.1:8777/"
+}

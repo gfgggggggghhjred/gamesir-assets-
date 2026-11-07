@@ -1,16 +1,21 @@
-# GameSir overlay asset references
+# GameSir asset references
 
-Reference files for [Overlay Studio](https://github.com/gfgggggggghhjred/overlay-maker).
+[Overlay Studio](https://github.com/gfgggggggghhjred/overlay-maker) reference material.
 
-## Source archive
+## Uploaded reference
 
-The supplied archive is named `GameSirStreamingTool.zip`. It has not been uploaded to this repository yet.
+`reference-settings/device-assets.zip` is the original smaller archive supplied in chat. Its five JSON files are also extracted alongside it. They contain saved application settings, not controller artwork.
 
-To provide it as a large download:
+Confirmed values:
 
-1. Open [New release](https://github.com/gfgggggggghhjred/gamesir-assets-/releases/new).
-2. Create a tag such as `source-assets-v1` and enter a release title.
-3. Under **Attach binaries**, attach `GameSirStreamingTool.zip` from your computer.
-4. Publish the release and share its link.
+- Asset lookup: `G7ProCE:0x1032` → `G7ProCE/Crown`.
+- Local web source: `http://127.0.0.1:8777/`.
+- The previously supplied index references `js/app.7ab89ecc.js`, `js/chunk-vendors.afd43107.js`, and `css/app.81be9198.css`.
 
-The archive can then be downloaded and inspected for the original GameSir overlay artwork and controller layouts. The editor's Tarantula artwork update is pending this asset inspection.
+## Next required source
+
+Inspect the main bundle `js/app.7ab89ecc.js` first. While GameSir Streaming Tool is running, it is referenced at:
+
+`http://127.0.0.1:8777/js/app.7ab89ecc.js`
+
+The `G7ProCE/Crown` value is an asset key, not a verified filesystem path. No original SVG/PNG asset files have been supplied yet. The Tarantula release is held pending inspection of the source assets; no collector or speculative asset-path search is needed.
